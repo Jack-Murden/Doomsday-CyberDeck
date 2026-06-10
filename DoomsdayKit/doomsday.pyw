@@ -4,7 +4,6 @@ from tkinter import ttk
 from pdf2image import convert_from_path
 from PIL import Image, ImageTk
 import os
-import colorsys
 
 firePDFs = ["BuildAFire.pdf","FireStartingMethods.pdf"]
 foodPDFs = ["AutumnBerries.pdf","mushrooms.pdf"]
@@ -89,7 +88,7 @@ def fireBtnFunc():
     clear()
     backBtn = tk.Button(root, image=exitBtnImg, bd=0,activebackground='#272727',background='#272727', command=survivalBtn).place(relx=0,rely=0,anchor='nw')
     topFillerLbl = tk.Label(root,text='\n',bg='#272727').pack()
-    instructionLabel = tk.Label(root,text='Choose the desired PDF in the dropdown\nbelow and click the confirm button on the right once to continue',background='#272727',fg='#FFFFFF',font=('Helvetica', 16)).pack()
+    instructionLabel = tk.Label(root,text='Choose the desired PDF in the dropdown\nbelow and click the confirm button on the right\nonce to continue',background='#272727',fg='#FFFFFF',font=('Helvetica', 16)).pack()
     pdfBtn = ttk.Combobox(root,textvariable=pdfChoice)
     pdfBtn['values'] = tuple(firePDFs)
     #pdfBtn.current(1)
@@ -123,7 +122,7 @@ def foodBtnFunc():
     clear()
     backBtn = tk.Button(root, image=exitBtnImg, bd=0,activebackground='#272727',background='#272727', command=survivalBtn).place(relx=0,rely=0,anchor='nw')
     topFillerLbl = tk.Label(root,text='\n',bg='#272727').pack()
-    instructionLabel = tk.Label(root,text='Choose the desired PDF in the dropdown\nbelow and click the confirm button on the right once to continue',background='#272727',fg='#FFFFFF',font=('Helvetica', 16)).pack()
+    instructionLabel = tk.Label(root,text='Choose the desired PDF in the dropdown\nbelow and click the confirm button on the right\nonce to continue',background='#272727',fg='#FFFFFF',font=('Helvetica', 16)).pack()
     pdfBtn = ttk.Combobox(root,textvariable=pdfChoice)
     pdfBtn['values'] = tuple(foodPDFs)
     #pdfBtn.current(1)
@@ -157,7 +156,7 @@ def shelterBtnFunc():
     clear()
     backBtn = tk.Button(root, image=exitBtnImg, bd=0,activebackground='#272727',background='#272727', command=survivalBtn).place(relx=0,rely=0,anchor='nw')
     topFillerLbl = tk.Label(root,text='\n',bg='#272727').pack()
-    instructionLabel = tk.Label(root,text='Choose the desired PDF in the dropdown\nbelow and click the confirm button on the right once to continue',background='#272727',fg='#FFFFFF',font=('Helvetica', 16)).pack()
+    instructionLabel = tk.Label(root,text='Choose the desired PDF in the dropdown\nbelow and click the confirm button on the right\nonce to continue',background='#272727',fg='#FFFFFF',font=('Helvetica', 16)).pack()
     pdfBtn = ttk.Combobox(root,textvariable=pdfChoice)
     pdfBtn['values'] = tuple(shelterPDFs)
     #pdfBtn.current(1)
@@ -191,7 +190,7 @@ def waterBtnFunc():
     clear()
     backBtn = tk.Button(root, image=exitBtnImg, bd=0,activebackground='#272727',background='#272727', command=survivalBtn).place(relx=0,rely=0,anchor='nw')
     topFillerLbl = tk.Label(root,text='\n',bg='#272727').pack()
-    instructionLabel = tk.Label(root,text='Choose the desired PDF in the dropdown\nbelow and click the confirm button on the right once to continue',background='#272727',fg='#FFFFFF',font=('Helvetica', 16)).pack()
+    instructionLabel = tk.Label(root,text='Choose the desired PDF in the dropdown\nbelow and click the confirm button on the right\nonce to continue',background='#272727',fg='#FFFFFF',font=('Helvetica', 16)).pack()
     pdfBtn = ttk.Combobox(root,textvariable=pdfChoice)
     pdfBtn['values'] = tuple(waterPDFs)
     #pdfBtn.current(1)
@@ -225,7 +224,7 @@ def medicalBtnFunc():
     clear()
     backBtn = tk.Button(root, image=exitBtnImg, bd=0,activebackground='#272727',background='#272727', command=survivalBtn).place(relx=0,rely=0,anchor='nw')
     topFillerLbl = tk.Label(root,text='\n',bg='#272727').pack()
-    instructionLabel = tk.Label(root,text='Choose the desired PDF in the dropdown\nbelow and click the confirm button on the right once to continue',background='#272727',fg='#FFFFFF',font=('Helvetica', 16)).pack()
+    instructionLabel = tk.Label(root,text='Choose the desired PDF in the dropdown\nbelow and click the confirm button on the right\nonce to continue',background='#272727',fg='#FFFFFF',font=('Helvetica', 16)).pack()
     pdfBtn = ttk.Combobox(root,textvariable=pdfChoice)
     pdfBtn['values'] = tuple(medicalPDFs)
     #pdfBtn.current(1)
